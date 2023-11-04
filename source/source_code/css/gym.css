@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --main-color: #223F49;
+	--sub-color: rgba(255, 184, 0, 1);
+    --black:#13131a;
+    --bg:#010103;
+    --border: .2rem solid var(--main-color);
+	--box-shadow: .8rem .8rem .8rem .3rem rgba(0, 0, 0, 0.25);
+    --title-text: 'Prata', serif;
+    --content-text: 'Montserrat', sans-serif;
+}
+
+*{
+    font-family: var(--title-text);
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: #fff;
+}
+section{
+    padding: 3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+ }
+.header{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    /* border-bottom: .2rem solid var(--main-color); */
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 7rem;
+}
+.header .icon div{
+    color: var(--black);
+    cursor: pointer;
+    font-size: 5rem;
+    margin-left: 2rem;
+}
+.header .icon div:hover{
+    color:var(--main-color);
+}
+
+.intro{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.intro .row h1{
+    font-family: var(--content-text);
+    font-size: 4rem;
+    font-weight: 200;
+    margin: 2rem;
+    padding-top: 10rem;
+    border-top: var(--border);
+}
+
+.intro .row .image img{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover; 
+}
+ 
+
+ #des_box .content .title {
+    font-family: var(--content-text);
+    font-size: 3.5rem;
+    font-weight: 200;
+    margin: 2rem;
+    padding-top: 10rem;
+    border-bottom: var(--border);
+    text-transform: none;
+}
+
+#des_box{
+    padding: 0;
+    padding-bottom: 20rem;
+}
+#des_box .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+ }
+ 
+ #des_box .row .image{
+    flex: 1 1 40rem;
+ }
+ 
+ #des_box .row .image img{
+    width: 48vw;
+    height: 45vh;
+ }
+ 
+ #des_box .row .content{
+    flex:1 1 40rem;
+    text-align: center;
+    margin: 3rem;
+ }
+ 
+ #des_box .row .content h2{
+    font-size: 4rem;
+    color: var(--main-color);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+ }
+ 
+ #des_box .row .content p{
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-family: var(--content-text);
+    font-size: 1.5rem;
+    color: var(--main-color);
+    text-transform: none;
+ }
+
+ /*footer section*/
+.footer{
+	background:var(--main-color);
+	text-align: center;
+}
+
+.footer .share{
+	padding:1rem 0;
+}
+
+.footer .share a{
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	color:#fff;
+	border:var(--border);
+	margin:.3rem;
+	border-radius: 50%;
+}
+
+
+.footer .share a:hover{
+	background-color: var(--sup-color);
+}
+
+.footer .links{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding:2rem 0;
+	gap:1rem;
+}
+
+.footer .links a{
+	padding:.7rem 2rem;
+	color:#fff;
+	border:var(--border);
+	font-size: 2rem;
+}
+
+.footer .links a:hover{
+	background:var(--sup-color);
+}
+
+.footer .credit{
+	color:#fff;
+	font-weight: lighter;
+	font-size: 2rem;
+
+}
+
+
+.footer .credit .developer-info a{
+	color:  rgba(255, 184, 0, 1);
+	font-weight: 400;
+	font-size: 2rem;
+}
+.footer .credit .mail{
+	color:  rgba(255, 184, 0, 1);
+	font-weight: 400;
+	font-size: 2rem;
+}
+.footer .credit .developer-info{
+	font-size: 2rem;
+}
+.footer .credit .orignal{
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 15px;
+}

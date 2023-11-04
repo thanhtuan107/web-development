@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Roboto+Mono&display=swap');
+
+:root{
+	--sub-color: #a9a9a9;
+    --black:#13131a;
+    --border: .2rem solid var(--black);
+	--box-shadow: .8rem .8rem .8rem .3rem rgba(0, 0, 0, 0.25);
+    --content: 'Montserrat', sans-serif;
+    --title: 'Arial', sans-serif;
+}
+
+*{
+    font-family: var(--content);
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: #fff;
+}
+section{
+    padding: 3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-left: 3rem;
+ }
+
+.header{
+    background: var(--black);
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    /* position: fixed; */
+    height: 10vh;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+.header a{
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.sup-header{
+    width: 20rem;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    
+}
+.sup-header p{
+    font-size: 2rem;
+    background: var(--sub-color);
+    height: 4rem;
+    padding-top: .7rem;
+    text-align: center;
+}
+
+.title {
+    width: 20rem;
+    padding: 0;
+    margin-left: 7rem;
+}
+
+.title .content h1{
+    font-family: var(--title);
+    font-size: 7rem;;
+}
+.title .content h3{
+    font-family: var(--title);
+    font-size: 2rem;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.infor {
+    padding-top: 10rem;
+}
+
+.infor .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit , minmax(30rem,1fr));
+	gap: 1.5rem;
+}
+
+.infor .box-container .box{
+	text-align: left;
+	border-left: var(--border);
+	padding: 0 2rem;
+    font-size: 2rem;
+}
+.infor .box-container #name{
+    border-left: none;
+}
+
+.infor .box-container .box .content p{
+	font-size: 1.5rem;
+	color: var(--main-color);
+}
+
+
+
+.about {
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit , minmax(30rem,1fr)); */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	text-align: center;
+	padding: 0 2rem;
+    margin-left: 5rem;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+
+}
+.about .image{
+	padding: 2.5rem 0;
+}
+.about  .image img{
+	width: 100%;
+	object-fit: cover;
+}
+.about  .content{
+    width: 100%;
+	padding-top: 1rem;
+	line-height: 1.5;
+ 
+}
+.about  .content h2{
+	color: var(--main-color);
+	font-size: 3rem;
+}
+
+.about .content span{
+    font-size: 3.5rem;
+    font-family: var(--title);
+}
+
+.about .content p{
+    width: 50%;
+	font-size: 1.5rem;
+	color: var(--main-color);
+    text-align: left;
+    line-height: 1;
+}
+
+
+.box{
+	padding: 0;
+	padding-top: 7rem;
+	margin: 0;
+	padding-bottom: 3rem;
+	border-bottom: .5rem solid var(--main-color);
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit , minmax(30rem,1fr)); */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+
+
+.box .image{
+	padding: 2.5rem 0;
+    width: 95%;
+}
+ .box .image img{
+	width: 100%;
+	object-fit: cover;
+}
+.box .content{
+    width: 60%;
+	padding-top: 1.5rem;
+	line-height: 1.5;
+    text-align: left;
+}
+
+.box .content span{
+    font-size: 3.5rem;
+    font-family: var(--title);
+}
+
+.box .content  .year{
+    font-size: 1.5rem;
+    font-family: var(--title);
+    font-weight: 600;
+}
+.box .content {
+    width: 70%;
+}
+.box .content p{
+	font-size: 1.5rem;
+	color: var(--main-color);
+    text-align: left;
+    line-height: 1;
+}
+.box .content .main{
+    width: 60%;
+    padding-left: 2rem;
+}
+.box .content .sup{
+    padding-left: 40%;
+    text-align: right;
+}
+
+#item2{
+   padding: 0;
+   margin-left: 5rem;
+}
+#item2 .image{
+    width: 100%;
+}
+#item2 .content{
+    
+    width: 100%;
+}
+#item2 .main{
+    text-align: right;
+    margin-left: 35%;
+}
+
